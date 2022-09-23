@@ -1,0 +1,54 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+}
+
+footer{
+    background-color:black;
+    color: white;
+    bottom: 0%;
+    position: absolute;
+    width:100%;
+    padding: 5px;
+}
+
+
+ol.footer{
+    display: flex;
+    list-style: none; 
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+li.facebook:hover{
+    color: blue;
+}
+
+li.instagram:hover{
+   color: crimson;
+}
+
+li.whatsapp:hover{
+    color: green;
+}
+
+.grid-container >*{
+    margin: 5%;
+    display: grid;
+    grid-template-rows: 50px 50px;
+    grid-template-columns: 50px 50px;
+    justify-content: center;
+    background-color: brown;
+    border: 1px solid black;
+}
+
+@media all and (min-width: 600px) {
+    .grid-container{
+        grid-row: auto;
+    }
+}
